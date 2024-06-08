@@ -1,3 +1,3 @@
-# ski-
+# ski repository
 
-Projet DEVOFS203
+PFE DEVOFS203
