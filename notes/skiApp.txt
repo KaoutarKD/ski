@@ -1,0 +1,36 @@
+# Architecture de l'application
+________________________________________________________________________________________________________________________________________________________
+
+## Frontend (React)
+- **Page d'accueil** : Affichage des posts triés par nombre de likes, avec pagination.
+- **Page de sujet** : Affichage des posts liés à un sujet spécifique (ex: `/s/Sky`).
+- **Page de profil utilisateur** : Affichage et modification des informations de l'utilisateur, liste des posts publiés.
+- **Page d'administration** : Notifications des nouveaux posts à valider, gestion des utilisateurs et des sujets.
+
+## Backend (Laravel)
+- **Authentification** : Système d'enregistrement et de connexion pour les utilisateurs.
+- **Gestion des utilisateurs** : Différenciation des rôles (admin, utilisateur normal).
+- **Gestion des posts** : Création, publication, validation par les admins.
+- **Gestion des sujets** : Création automatique de sujets, validation par les admins.
+- **Notifications** : Envoi de notifications sur le statut des posts aux utilisateurs.
+
+## Base de données (MySQL ou autre)
+- **Utilisateurs** : Stockage des informations d'authentification et des rôles.
+- **Posts** : Stockage des descriptions, photos, likes, dates de publication et sujets associés.
+- **Sujets** : Stockage des sujets et des posts associés.
+- **Commentaires** : Stockage des commentaires uniques liés aux posts.
+
+## Déploiement et maintenance
+- Utilisation de **Docker** pour faciliter le déploiement et la portabilité.
+- **Git** pour le contrôle de version et la collaboration entre les membres de l'équipe.
+
+# Idées pour ajouter de la valeur
+
+- **Système de tags** : Permettre aux utilisateurs d'ajouter des tags aux posts pour améliorer la recherche et la découverte de contenu.
+- **Filtrage avancé** : Offrir des options de filtrage par date, nombre de commentaires, etc.
+- **Mode sombre** : Implémentation d'un mode sombre pour améliorer l'expérience utilisateur.
+- **API publique** : Permettre aux développeurs d'accéder à certains contenus via une API, ce qui pourrait encourager l'intégration avec d'autres applications.
+- **Système de récompenses** : Introduire un système de points ou de récompenses pour encourager l'engagement des utilisateurs.
+- **Modération communautaire** : Permettre à certains utilisateurs de confiance de modérer le contenu, réduisant ainsi la charge sur les administrateurs.
+
+_________________________________________________________________________________________________________________________________________________________
